@@ -9,7 +9,7 @@ fundebug.apikey=config.fundebug;
 fundebug.releaseStage = process.env.NODE_ENV || "development"
 
 app.use(fundebug.ExpressErrorHandler);
-app.use(require('./router'))
+app.use(require('./routes'))
 app.use((err, req, res, next) => {
   if (err instanceof BizError || !(err instanceof Error)) {
     res.status(400).send({message: err.message || err})
@@ -27,4 +27,4 @@ app.destroy = () => {
   db.destroy()
 }
 
-module.exports = ap
+module.exports = app
