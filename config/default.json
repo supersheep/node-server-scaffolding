@@ -1,0 +1,24 @@
+{
+  "env": "<env>",
+  "fundebug": "<fundebug-api-key>",
+  "qiniu": {
+    "imageHost": "<qiniu-image-host>",
+    "accessKey": "<qiniu-access-key>",
+    "secretKey": "<qiniu-secret-key>"
+  },
+  "wechat": {
+    "partnerKey": "<wechat-pay-partner-key>",
+    "mchId": "<wechat-pay-mch-id>",
+    "notifyUrl": "<wechat-notify-url>",
+    "appid": "<wechat-app-id>",
+    "secret": "<wechat-secret>"
+  },
+  "session": "<session-secret>",
+  "mysql": {
+    "host" : "<mysql-host>",
+    "user" : "<mysql-user>",
+    "password" : "<mysql-password>",
+    "database" : "<mysql-database>"
+  },
+  "sault": "<sault>"
+}
